@@ -18,11 +18,14 @@ export const COLORS = {
     white: '#FFFFFF',
     tinted: '#F7F5FE',
     subtle: '#F4F2F7',
+    selected: '#F8F6FF', // 피그마 변수 surface/selected (선택 박스 Selected)
   },
   border: {
     default: '#ECE9F1',
     subtle: '#EFECF4',
     selected: '#AD99EF', // 피그마 변수 border/selected (Secondary 버튼 Pressed)
+    brandSoft: '#DCD2FB', // 피그마 purple/300 (Chip Selected 테두리)
+    error: '#EF8D88', // 피그마 변수 accent/coral (TextField Error 테두리)
   },
   status: {
     error: '#FF4641',
