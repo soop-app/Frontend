@@ -9,7 +9,7 @@ type TextFieldProps = TextInputProps & {
 };
 
 // 피그마 Bora/TextField (Default · Filled · Focused · Error)
-export function TextField({ errorMessage, style, onFocus, onBlur, ...rest }: TextFieldProps) {
+export function TextField({ errorMessage, placeholder, style, onFocus, onBlur, ...rest }: TextFieldProps) {
   const [focused, setFocused] = useState(false);
   const borderColor = errorMessage
     ? COLORS.border.error
@@ -20,6 +20,7 @@ export function TextField({ errorMessage, style, onFocus, onBlur, ...rest }: Tex
   return (
     <View style={styles.container}>
       <TextInput
+        placeholder={focused ? undefined : placeholder} // 입력하려고 누르면 안내 문구는 숨김
         placeholderTextColor={COLORS.text.secondary}
         onFocus={(e) => {
           setFocused(true);
