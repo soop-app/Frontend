@@ -5,6 +5,7 @@ export const COLORS = {
     strong: '#6B54CE',
     soft: '#F0EAFF',
     secondary: '#7B61C8',
+    primaryAlpha50: '#8C78D580', // 피그마 Brand/Primary Opacity-50 (변수 purple/500-alpha-50)
   },
   text: {
     primary: '#2D2A36',
@@ -31,7 +32,13 @@ export const COLORS = {
     error: '#FF4641',
     success: '#009B8B',
   },
+  feedback: {
+    toast: '#332F3B', // 피그마 변수 feedback/toast (완료 알림 배경)
+  },
   social: {
     kakao: '#FEE500',
   },
 } as const;
+
+// 참고: 피그마 Palette(이름이 색 코드인 색 40여 개)는 그대로 옮기지 않음.
+// 화면에서 필요해지면 위 그룹에 의미 있는 이름으로 추가할 것.
