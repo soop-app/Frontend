@@ -16,6 +16,8 @@ export default function TabLayout() {
     'SUIT-Medium': require('@/assets/fonts/SUIT-Medium.otf'),
     'SUIT-SemiBold': require('@/assets/fonts/SUIT-SemiBold.otf'),
     'SUIT-Bold': require('@/assets/fonts/SUIT-Bold.otf'),
+    'SUIT-ExtraBold': require('@/assets/fonts/SUIT-ExtraBold.otf'),
+    'SUIT-Heavy': require('@/assets/fonts/SUIT-Heavy.otf'),
   });
 
   // 폰트 로딩 중에는 스플래시 유지 (AnimatedSplashOverlay가 렌더되면서 스플래시를 숨김)
